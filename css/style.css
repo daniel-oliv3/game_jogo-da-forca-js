@@ -13,21 +13,38 @@ body {
     height: 90vh;
     margin-top: 10px;
     background-color: goldenrod;
-    font-family: Ubuntu;
+    font-family: Ubuntu, sans-serif;
 }
 
 
 /* ======= Container ======= */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 
 /* ======= Imagem ======= */
 #imagem {
-    background-image: url('../img/forca06.png');
+    background-image: url('../img/forca.png');
     width: 234px;
     height: 273px;
     background-repeat: no-repeat;
 }
 
 /* ======= Palavra secreta ======= */
+#palavra-secreta {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
 
 /* ======= Teclas ======= */
 
