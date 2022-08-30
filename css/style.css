@@ -1,14 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 
 * { 
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
+body {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    background-color: goldenrod;
+    font-family: Ubuntu;
+}
 
 
 /* ======= Container ======= */
@@ -18,6 +24,7 @@
     background-image: url('../img/forca06.png');
     width: 234px;
     height: 273px;
+    background-repeat: no-repeat;
 }
 
 /* ======= Palavra secreta ======= */
