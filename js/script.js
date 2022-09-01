@@ -1,124 +1,164 @@
 /* ======= Lista de palavras(Objstos) ======= */
 const palavras = [
     palavra001={
-        nome = "IRLANDA",
-        categoria = "LUGARES"
+        nome: "IRLANDA",
+        categoria: "LUGARES"
     },
     palavra002={
-        nome = "EQUADOR",
-        categoria = "LUGARES"
+        nome: "EQUADOR",
+        categoria: "LUGARES"
     },
     palavra003={
-        nome = "INDONESIA",
-        categoria = "LUGARES"
+        nome: "INDONESIA",
+        categoria: "LUGARES"
     },
     palavra004={
-        nome = "MALDIVAS",
-        categoria = "LUGARES"
+        nome: "MALDIVAS",
+        categoria: "LUGARES"
     },
     palavra005={
-        nome = "INGLATERRA",
-        categoria = "LUGARES"
+        nome: "INGLATERRA",
+        categoria: "LUGARES"
     },
     palavra006={
-        nome = "UZBEQUISTAO",
-        categoria = "LUGARES"
+        nome: "UZBEQUISTAO",
+        categoria: "LUGARES"
     },
     palavra007={
-        nome = "CHINA",
-        categoria = "LUGARES"
+        nome: "CHINA",
+        categoria: "LUGARES"
     },
     palavra008={
-        nome = "PORTUGAL",
-        categoria = "LUGARES"
+        nome: "PORTUGAL",
+        categoria: "LUGARES"
     },
     palavra009={
-        nome = "AMAZONAS",
-        categoria = "LUGARES"
+        nome: "AMAZONAS",
+        categoria: "LUGARES"
     },
     palavra010={
-        nome = "MANAUS",
-        categoria = "LUGARES"
+        nome: "MANAUS",
+        categoria: "LUGARES"
     },
     palavra011={
-        nome = "BICICLETA",
-        categoria = "TRANSPORTE"
+        nome: "BICICLETA",
+        categoria: "TRANSPORTE"
     },
     palavra012={
-        nome = "LANCHA",
-        categoria = "TRANSPORTE"
+        nome: "LANCHA",
+        categoria: "TRANSPORTE"
     },
     palavra013={
-        nome = "NAVIO",
-        categoria = "TRANSPORTE"
+        nome: "NAVIO",
+        categoria: "TRANSPORTE"
     },
     palavra014={
-        nome = "TELEFERICO",
-        categoria = "TRANSPORTE"
+        nome: "TELEFERICO",
+        categoria: "TRANSPORTE"
     },
     palavra015={
-        nome = "MOTOCICLETA",
-        categoria = "TRANSPORTE"
+        nome: "MOTOCICLETA",
+        categoria: "TRANSPORTE"
     },
     palavra016={
-        nome = "BARCO",
-        categoria = "TRANSPORTE"
+        nome: "BARCO",
+        categoria: "TRANSPORTE"
     },
     palavra017={
-        nome = "AERONAVE",
-        categoria = "TRANSPORTE"
+        nome: "AERONAVE",
+        categoria: "TRANSPORTE"
     },
     palavra018={
-        nome = "SKATEBOARDING",
-        categoria = "TRANSPORTE"
+        nome: "SKATEBOARDING",
+        categoria: "TRANSPORTE"
     },
     palavra019={
-        nome = "ONIBUS",
-        categoria = "TRANSPORTE"
+        nome: "ONIBUS",
+        categoria: "TRANSPORTE"
     },
     palavra020={
-        nome = "IATE",
-        categoria = "TRANSPORTE"
+        nome: "IATE",
+        categoria: "TRANSPORTE"
     },
-    palavra011={
-        nome = "BICICLETA",
-        categoria = "TRANSPORTE"
+    palavra021={
+        nome: "XICARA",
+        categoria: "OBJETOS"
     },
-    palavra012={
-        nome = "LANCHA",
-        categoria = "TRANSPORTE"
+    palavra022={
+        nome: "MOEDA",
+        categoria: "OBJETOS"
     },
-    palavra013={
-        nome = "NAVIO",
-        categoria = "TRANSPORTE"
+    palavra023={
+        nome: "SINO",
+        categoria: "OBJETOS"
     },
-    palavra014={
-        nome = "TELEFERICO",
-        categoria = "TRANSPORTE"
+    palavra024={
+        nome: "CHUVEIRO",
+        categoria: "OBJETOS"
     },
-    palavra015={
-        nome = "MOTOCICLETA",
-        categoria = "TRANSPORTE"
+    palavra025={
+        nome: "TAMBORETE",
+        categoria: "OBJETOS"
     },
-    palavra016={
-        nome = "BARCO",
-        categoria = "TRANSPORTE"
+    palavra026={
+        nome: "IPHONE",
+        categoria: "OBJETOS"
     },
-    palavra017={
-        nome = "AERONAVE",
-        categoria = "TRANSPORTE"
+    palavra027={
+        nome: "BONECA",
+        categoria: "OBJETOS"
     },
-    palavra018={
-        nome = "SKATEBOARDING",
-        categoria = "TRANSPORTE"
+    palavra028={
+        nome: "PARALELEPIPEDO",
+        categoria: "OBJETOS"
     },
-    palavra019={
-        nome = "ONIBUS",
-        categoria = "TRANSPORTE"
+    palavra029={
+        nome: "LAMPADA",
+        categoria: "OBJETOS"
     },
-    palavra020={
-        nome = "IATE",
-        categoria = "TRANSPORTE"
+    palavra030={
+        nome: "LAPIS",
+        categoria: "OBJETOS"
+    },
+    palavra031={
+        nome: "SUSHI",
+        categoria: "ALIMENTOS"
+    },
+    palavra032={
+        nome: "MORANGO",
+        categoria: "ALIMENTOS"
+    },
+    palavra033={
+        nome: "ABACAXI",
+        categoria: "ALIMENTOS"
+    },
+    palavra034={
+        nome: "MACARRONADA",
+        categoria: "ALIMENTOS"
+    },
+    palavra035={
+        nome: "SANDUICHE",
+        categoria: "ALIMENTOS"
+    },
+    palavra036={
+        nome: "VINAGRETE",
+        categoria: "ALIMENTOS"
+    },
+    palavra037={
+        nome: "ALCATRA",
+        categoria: "ALIMENTOS"
+    },
+    palavra038={
+        nome: "PIZZA",
+        categoria: "ALIMENTOS"
+    },
+    palavra039={
+        nome: "LAMEN",
+        categoria: "ALIMENTOS"
+    },
+    palavra040={
+        nome: "LARANJA",
+        categoria: "ALIMENTOS"
     },
 ]
 
