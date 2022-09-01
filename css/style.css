@@ -86,19 +86,27 @@ body {
 
 
 
+
+
+
 /* ======= Responsive/Responsividade ======= */
-@media (max-width: 991px){
+@media (min-width: 321px){
+
+    .teclas button {
+        width: 25px;
+        height: 25px;
+    }
 
     
 
+    #categoria {
+        font-size: 1.3em;
+    }
+
 }
 
-@media (max-width: 768px){
 
-
-}
-
-@media (max-width: 376px){
+@media (min-width: 376px){
 
     .teclas button {
         width: 30px;
@@ -119,17 +127,46 @@ body {
 
 }
 
-@media (max-width: 321px){
+
+@media (min-width: 426px){
 
     .teclas button {
-        width: 25px;
-        height: 25px;
+        width: 36px;
+        height: 36px;
     }
 
-    
+    #palavra-secreta {
+        font-size: 1.5em;
+    }
+
+    .letras {
+        width: 20px;
+    }
 
     #categoria {
-        font-size: 1.3em;
+        font-size: 1.6em;
+    }
+
+}
+
+
+@media (min-width: 769px){
+
+    .teclas button {
+        width: 68px;
+        height: 68px;
+    }
+
+    #palavra-secreta {
+        font-size: 2.5em;
+    }
+
+    .letras {
+        width: 35px;
+    }
+
+    #categoria {
+        font-size: 2em;
     }
 
 }
