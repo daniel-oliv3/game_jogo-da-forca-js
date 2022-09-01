@@ -1,4 +1,7 @@
-/* ======= Lista de palavras(Objstos) ======= */
+let palavraSecretaCategoria;
+let palavraSecretaSorteada;
+
+/* ======= Lista de palavras(Objetos) ======= */
 const palavras = [
     palavra001={
         nome: "IRLANDA",
@@ -159,10 +162,63 @@ const palavras = [
     palavra040={
         nome: "LARANJA",
         categoria: "ALIMENTOS"
+    }, //
+    palavra041={
+        nome: "HIPOPOTAMO",
+        categoria: "ANIMAIS"
+    },
+    palavra042={
+        nome: "LARGATIXA",
+        categoria: "ANIMAIS"
+    },
+    palavra043={
+        nome: "SAGUI",
+        categoria: "ANIMAIS"
+    },
+    palavra044={
+        nome: "CALANGO",
+        categoria: "ANIMAIS"
+    },
+    palavra045={
+        nome: "DROMEDARIO",
+        categoria: "ANIMAIS"
+    },
+    palavra046={
+        nome: "TARTARUGA",
+        categoria: "ANIMAIS"
+    },
+    palavra047={
+        nome: "CANGURU",
+        categoria: "ANIMAIS"
+    },
+    palavra048={
+        nome: "JARARACA",
+        categoria: "ANIMAIS"
+    },
+    palavra049={
+        nome: "JACARE",
+        categoria: "ANIMAIS"
+    },
+    palavra050={
+        nome: "BOI",
+        categoria: "ANIMAIS"
     },
 ]
 
 
+/* ======= Cria a palavra secreta ======= */
+function criaPalavraSecreta(){
+    const indexPalavra = parseInt(Math.random() * palavras.length);
+    
+
+    palavraSecretaSorteada = palavras[indexPalavra].nome;
+    palavraSecretaCategoria = palavras[indexPalavra].categoria;
+
+    console.log(palavraSecretaSorteada);
+    console.log(palavraSecretaCategoria);
+}
+
+criaPalavraSecreta();
 
 
 
