@@ -222,10 +222,16 @@ criaPalavraSecreta();
 
 
 
+/* ======= Montar a palavra na tela ======= */
+function montarPalavraNaTela(){
+    const categoria = document.getElementById("categoria");
+    categoria.innerHTML = palavraSecretaCategoria;
 
+    const palavraTela = document.getElementById("palavra-secreta");
+    palavraTela.innerHTML = palavraSecretaSorteada;
+}
 
-
-
+montarPalavraNaTela();
 
 
 
