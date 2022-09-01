@@ -155,6 +155,7 @@ body {
     .teclas button {
         width: 68px;
         height: 68px;
+        font-size: 2em;
     }
 
     #palavra-secreta {
