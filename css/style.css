@@ -87,3 +87,49 @@ body {
 
 
 /* ======= Responsive/Responsividade ======= */
+@media (max-width: 991px){
+
+    
+
+}
+
+@media (max-width: 768px){
+
+
+}
+
+@media (max-width: 376px){
+
+    .teclas button {
+        width: 30px;
+        height: 30px;
+    }
+
+    #palavra-secreta {
+        font-size: 1.3em;
+    }
+
+    .letras {
+        width: 18px;
+    }
+
+    #categoria {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width: 321px){
+
+    .teclas button {
+        width: 25px;
+        height: 25px;
+    }
+
+    
+
+    #categoria {
+        font-size: 1.3em;
+    }
+
+}
