@@ -297,6 +297,39 @@ function comparaListas(letra){
 }
 
 
+/* ======= Função que carrega a imagem do corpo do boneco na forca ======= */
+function carregaImagemForca(){
+    switch(tentativas){
+        case: 5
+            document.getElementById("imagem").style.background = "url('../img/forca01.png')";
+            break;
+        case: 4
+            document.getElementById("imagem").style.background = "url('../img/forca02.png')";
+            break;
+        case: 3
+            document.getElementById("imagem").style.background = "url('../img/forca03.png')";
+            break;
+        case: 2
+            document.getElementById("imagem").style.background = "url('../img/forca04.png')";
+            break;
+        case: 1
+            document.getElementById("imagem").style.background = "url('../img/forca05.png')";
+            break;
+        case: 0
+            document.getElementById("imagem").style.background = "url('../img/forca06.png')";
+            break;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 /* ======= / ======= */
 
 
