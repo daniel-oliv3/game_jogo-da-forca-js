@@ -1,6 +1,7 @@
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 let listaDinamica = [];
+let tentativas = 6;
 
 
 /* ======= Lista de palavras(Objetos) ======= */
@@ -247,7 +248,11 @@ montarPalavraNaTela();
 
 /* ======= Verifica a letra escolhida ======= */
 function verificaLetraEscolhida(letra){
-    mudarStyleLetra("tecla-" + letra);
+    if(tentativas > 0){ // verifica o número de tentativas
+        mudarStyleLetra("tecla-" + letra);
+        comparaListas(letra); //chamada da função
+    }
+    
 }
 
 function mudarStyleLetra(tecla){
@@ -256,8 +261,25 @@ function mudarStyleLetra(tecla){
 }
 
 
+/* ======= Função que verifica se a letra digitada e igual a letra sorteada. ======= */
+function comparaListas(letra){
+    const pos = palavraSecretaSorteada.indexOf(letra);
 
+    if(pos < 0){ //se a letra não existir
+        tentativas--;
 
+        //aparecer imagem
+
+        //verificar se ainda tem tentativas 
+        // mensagem
+    }else { // a letra existe
+        for(i = 0; i < palavraSecretaSorteada.length; i++){
+            if(palavraSecretaSorteada[i] == letra){
+                listaDinamica[i] = letra;
+            }
+        }
+    }
+}
 
 
 /* ======= / ======= */
