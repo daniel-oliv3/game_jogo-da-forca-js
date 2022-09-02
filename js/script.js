@@ -272,6 +272,7 @@ function comparaListas(letra){
         tentativas--;
 
         //aparecer imagem
+        carregaImagemForca();
 
         //verificar se ainda tem tentativas 
         // mensagem
@@ -300,23 +301,26 @@ function comparaListas(letra){
 /* ======= Função que carrega a imagem do corpo do boneco na forca ======= */
 function carregaImagemForca(){
     switch(tentativas){
-        case: 5
+        case 5:
             document.getElementById("imagem").style.background = "url('../img/forca01.png')";
             break;
-        case: 4
+        case 4:
             document.getElementById("imagem").style.background = "url('../img/forca02.png')";
             break;
-        case: 3
+        case 3:
             document.getElementById("imagem").style.background = "url('../img/forca03.png')";
             break;
-        case: 2
+        case 2:
             document.getElementById("imagem").style.background = "url('../img/forca04.png')";
             break;
-        case: 1
+        case 1:
             document.getElementById("imagem").style.background = "url('../img/forca05.png')";
             break;
-        case: 0
+        case 0:
             document.getElementById("imagem").style.background = "url('../img/forca06.png')";
+            break;
+        default:
+            document.getElementById("imagem").style.background = "url('../img/forca.png')";
             break;
     }
 }
