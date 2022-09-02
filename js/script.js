@@ -247,7 +247,12 @@ montarPalavraNaTela();
 
 /* ======= Verifica a letra escolhida ======= */
 function verificaLetraEscolhida(letra){
-    
+    mudarStyleLetra("tecla-" + letra);
+}
+
+function mudarStyleLetra(tecla){
+    document.getElementById(tecla).style.background = "#C71585";
+    document.getElementById(tecla).style.color = "#fff";
 }
 
 
