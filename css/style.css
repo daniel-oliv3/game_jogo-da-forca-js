@@ -55,6 +55,15 @@ body {
     margin-right: 2px;
 }
 
+.letrasEspaco {
+    width: 16px;
+    text-align: center;
+    color: #fff;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 /* ======= Teclas ======= */
 #teclado {
     margin-top: 30px;
