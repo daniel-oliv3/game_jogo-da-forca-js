@@ -1,3 +1,5 @@
+/* ======= / ======= */
+
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 let listaDinamica = [];
@@ -251,6 +253,7 @@ function verificaLetraEscolhida(letra){
     if(tentativas > 0){ // verifica o número de tentativas
         mudarStyleLetra("tecla-" + letra);
         comparaListas(letra); //chamada da função
+        montarPalavraNaTela();
     }
     
 }
@@ -278,6 +281,18 @@ function comparaListas(letra){
                 listaDinamica[i] = letra;
             }
         }
+    }
+
+    let vitoria = true;
+    for(i = 0; i < palavraSecretaSorteada.length; i++){
+        if(palavraSecretaSorteada[i] != listaDinamica[i]){ //verificando as listas
+            vitoria = false;
+        }
+    }
+
+    if(vitoria == true){
+        // mensagem na tela
+        tentativas = 0;
     }
 }
 
