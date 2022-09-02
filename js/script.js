@@ -274,6 +274,10 @@ function comparaListas(letra){
 
         //aparecer imagem
         carregaImagemForca();
+        
+        if(tentativas == 0){
+            abreModal();
+        }
 
         //verificar se ainda tem tentativas 
         // mensagem
@@ -327,7 +331,12 @@ function carregaImagemForca(){
 }
 
 
-
+/* ======= Modal ======= */
+function abreModal(){
+    $("#myModal").modal({
+        show: true
+    });
+}
 
 
 
