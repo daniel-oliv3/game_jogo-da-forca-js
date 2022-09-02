@@ -298,6 +298,7 @@ function comparaListas(letra){
 
     if(vitoria == true){
         // mensagem na tela
+        abreModal("PARABÉNS!", "Você Venceu! <br>");
         tentativas = 0;
     }
 }
@@ -347,12 +348,11 @@ function abreModal(titulo, mensagem){
 
 
 
-
-
-
-
-/* ======= / ======= */
-
+/* ======= BTN Reiniciar ======= */
+let bntReiniciar = document.querySelector("#btnReiniciar")
+bntReiniciar.addEventListener("click", function(){
+    location.reload();
+});
 
 
 
