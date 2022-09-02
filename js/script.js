@@ -275,8 +275,6 @@ function montarPalavraNaTela(){
     const palavraTela = document.getElementById("palavra-secreta");
     palavraTela.innerHTML = "";
 
-    console.log(palavraSecretaSorteada);
-
     for(i=0; i < palavraSecretaSorteada.length; i++){
         if(listaDinamica[i] == undefined){
             if(palavraSecretaSorteada[i] == " "){
@@ -296,7 +294,6 @@ function montarPalavraNaTela(){
             }
         }
     }
-    console.log(listaDinamica);
 }
 
 montarPalavraNaTela();
@@ -306,17 +303,23 @@ montarPalavraNaTela();
 function verificaLetraEscolhida(letra){
     document.getElementById("tecla-" + letra).disabled = true;
     if(tentativas > 0){ // verifica o número de tentativas
-        mudarStyleLetra("tecla-" + letra);
+        mudarStyleLetra("tecla-" + letra, false);
         comparaListas(letra); //chamada da função
         montarPalavraNaTela();
-    }
-    
+    }   
 }
 
-function mudarStyleLetra(tecla){
-    document.getElementById(tecla).style.background = "#C71585";
-    document.getElementById(tecla).style.color = "#fff";
+function mudarStyleLetra(tecla, condicao){
+    if(condicao == false){
+        document.getElementById(tecla).style.background = "#C71585";
+        document.getElementById(tecla).style.color = "#fff";
+    }
+    else {
+        document.getElementById(tecla).style.background = "#008000";
+        document.getElementById(tecla).style.color = "#fff";
+    }
 }
+    
 
 
 /* ======= Função que verifica se a letra digitada e igual a letra sorteada. ======= */
@@ -336,6 +339,7 @@ function comparaListas(letra){
         //verificar se ainda tem tentativas 
         // mensagem
     }else { // a letra existe
+        mudarStyleLetra("tecla-" + letra, true);
         for(i = 0; i < palavraSecretaSorteada.length; i++){
             if(palavraSecretaSorteada[i] == letra){
                 listaDinamica[i] = letra;
