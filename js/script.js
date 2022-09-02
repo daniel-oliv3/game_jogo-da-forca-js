@@ -245,8 +245,10 @@ function montarPalavraNaTela(){
 montarPalavraNaTela();
 
 
-
-
+/* ======= Verifica a letra escolhida ======= */
+function verificaLetraEscolhida(letra){
+    
+}
 
 
 
