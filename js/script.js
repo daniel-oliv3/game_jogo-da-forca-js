@@ -208,6 +208,46 @@ const palavras = [
         nome: "BOI",
         categoria: "ANIMAIS"
     },
+    palavra051 = {
+        nome: "A ERA DO GELO",
+        categoria:"TV E CINEMA"
+    },
+    palavra052 = {
+        nome: "HOMEM ARANHA",
+        categoria:"TV E CINEMA"
+    },
+    palavra053 = {
+        nome: "CASA MONSTRO",
+        categoria:"TV E CINEMA"
+    },
+    palavra054 = {
+        nome: "TELA QUENTE",
+        categoria:"TV E CINEMA"
+    },
+    palavra055 = {
+        nome: "STRANGER THINGS",
+        categoria:"TV E CINEMA"
+    },
+    palavra056 = {
+        nome: "O REI DO GADO",
+        categoria:"TV E CINEMA"
+    },
+    palavra057 = {
+        nome: "MULHER MARAVILHA",
+        categoria:"TV E CINEMA"
+    },
+    palavra058 = {
+        nome: "O INCRIVEL HULK",
+        categoria:"TV E CINEMA"
+    },
+    palavra059 = {
+        nome: "BOB ESPONJA",
+        categoria:"TV E CINEMA"
+    },
+    palavra060 = {
+        nome: "PANICO NA TV",
+        categoria:"TV E CINEMA"
+    },
 ]
 
 
