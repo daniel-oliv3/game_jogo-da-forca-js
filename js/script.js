@@ -250,6 +250,7 @@ montarPalavraNaTela();
 
 /* ======= Verifica a letra escolhida ======= */
 function verificaLetraEscolhida(letra){
+    document.getElementById("tecla-" + letra).disabled = true;
     if(tentativas > 0){ // verifica o número de tentativas
         mudarStyleLetra("tecla-" + letra);
         comparaListas(letra); //chamada da função
