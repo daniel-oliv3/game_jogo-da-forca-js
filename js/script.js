@@ -276,7 +276,7 @@ function comparaListas(letra){
         carregaImagemForca();
         
         if(tentativas == 0){
-            abreModal();
+            abreModal("OPS!", "Não foi dessa vez... A palavra secreta era <br>" + palavraSecretaSorteada);
         }
 
         //verificar se ainda tem tentativas 
@@ -332,7 +332,14 @@ function carregaImagemForca(){
 
 
 /* ======= Modal ======= */
-function abreModal(){
+function abreModal(titulo, mensagem){
+
+    let modalTitulo = document.getElementById("exampleModalLabel");
+    modalTitulo.innerText = titulo;
+
+    let modalBody = document.getElementById("modalBody");
+    modalBody.innerHTML = mensagem;
+
     $("#myModal").modal({
         show: true
     });
