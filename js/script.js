@@ -337,14 +337,7 @@ async function comparaListas(letra){
         if(tentativas == 0){
             abreModal("OPS!", "Não foi dessa vez... A palavra secreta era <br>" + palavraSecretaSorteada);
             
-            while(jogarNovamente == true){
-                document.getElementById("btnReiniciar").style.backgroundColor = 'red';
-                document.getElementById("btnReiniciar").style.scale = 1.3;
-                await atraso(500);
-                document.getElementById("btnReiniciar").style.backgroundColor = 'yellow';
-                document.getElementById("btnReiniciar").style.scale = 1;
-                await atraso(500);
-            }
+            psicarBotaoJogarNovamente();
         }
 
         //verificar se ainda tem tentativas 
@@ -370,14 +363,18 @@ async function comparaListas(letra){
         abreModal("PARABÉNS!", "Você Venceu! <br>");
         tentativas = 0;
 
-        while(jogarNovamente == true){
-            document.getElementById("btnReiniciar").style.backgroundColor = 'red';
-            document.getElementById("btnReiniciar").style.scale = 1.3;
-            await atraso(500);
-            document.getElementById("btnReiniciar").style.backgroundColor = 'yellow';
-            document.getElementById("btnReiniciar").style.scale = 1;
-            await atraso(500);
-        }
+        psicarBotaoJogarNovamente();
+    }
+}
+
+async function psicarBotaoJogarNovamente(){
+    while(jogarNovamente == true){
+        document.getElementById("btnReiniciar").style.backgroundColor = 'red';
+        document.getElementById("btnReiniciar").style.scale = 1.3;
+        await atraso(500);
+        document.getElementById("btnReiniciar").style.backgroundColor = 'yellow';
+        document.getElementById("btnReiniciar").style.scale = 1;
+        await atraso(500);
     }
 }
 
@@ -433,6 +430,7 @@ function abreModal(titulo, mensagem){
 /* ======= BTN Reiniciar ======= */
 let bntReiniciar = document.querySelector("#btnReiniciar")
 bntReiniciar.addEventListener("click", function(){
+    jogarNovamente = false;
     location.reload();
 });
 
