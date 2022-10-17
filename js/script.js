@@ -1,5 +1,6 @@
 /* ======= / ======= */
 
+let jogarNovamente = true;
 let palavraSecretaCategoria;
 let palavraSecretaSorteada;
 let listaDinamica = [];
@@ -259,6 +260,7 @@ function criaPalavraSecreta(){
     palavraSecretaSorteada = palavras[indexPalavra].nome;
     palavraSecretaCategoria = palavras[indexPalavra].categoria;
 
+    //mostra no console
     console.log(palavraSecretaSorteada);
     console.log(palavraSecretaCategoria);
 }
@@ -323,7 +325,7 @@ function mudarStyleLetra(tecla, condicao){
 
 
 /* ======= Função que verifica se a letra digitada e igual a letra sorteada. ======= */
-function comparaListas(letra){
+async function comparaListas(letra){
     const pos = palavraSecretaSorteada.indexOf(letra);
 
     if(pos < 0){ //se a letra não existir
@@ -358,7 +360,17 @@ function comparaListas(letra){
         // mensagem na tela
         abreModal("PARABÉNS!", "Você Venceu! <br>");
         tentativas = 0;
+
+        while(jogarNovamente == true){
+            document.getElementById("btnReiniciar").style.backgroundColor = 'red';
+            await atraso(500)
+            document.getElementById("btnReiniciar").style.backgroundColor = 'yellow';
+        }
     }
+}
+
+async function atraso(tempo){
+    return new Promise(x => setTimeout(x, tempo));
 }
 
 
