@@ -98,29 +98,50 @@ body {
 }
 
 
+/* ======= / ======= */
+#abreModalAddPalavra, #recarregar, #jogarAutomatico {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border: none;
+    outline: none;
+    border-radius: 70px;
+    font-size: 3em;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
 
+#abreModalAddPalavra {
+    bottom: 160px;
+    right: 5px;
+}
 
+#recarregar {
+    bottom: 80px;
+    right: 5px;
+}
+
+#jogarAutomatico {
+    bottom: 5px;
+    right: 5px;
+}
 
 
 /* ======= Responsive/Responsividade ======= */
 @media (min-width: 321px){
-
     .teclas button {
         width: 25px;
         height: 25px;
     }
 
-    
-
     #categoria {
         font-size: 1.3em;
     }
-
 }
 
 
 @media (min-width: 376px){
-
     .teclas button {
         width: 30px;
         height: 30px;
@@ -137,12 +158,10 @@ body {
     #categoria {
         font-size: 1.5em;
     }
-
 }
 
 
 @media (min-width: 426px){
-
     .teclas button {
         width: 36px;
         height: 36px;
@@ -159,12 +178,10 @@ body {
     #categoria {
         font-size: 1.6em;
     }
-
 }
 
 
 @media (min-width: 769px){
-
     .teclas button {
         width: 68px;
         height: 68px;
@@ -182,5 +199,4 @@ body {
     #categoria {
         font-size: 2em;
     }
-
 }
