@@ -99,7 +99,7 @@ body {
 
 
 /* ======= / ======= */
-#abreModalAddPalavra, #recarregar, #jogarAutomatico {
+#abreModalAddPalavra, #recarregar, #jogarAutomatico, #jogarNovamente {
     position: fixed;
     width: 70px;
     height: 70px;
@@ -126,6 +126,24 @@ body {
     bottom: 5px;
     right: 5px;
 }
+
+#status {
+    position: fixed;
+    bottom: 10px;
+}
+
+#jogarNovamente {
+    bottom: 15px;
+    right: 30px;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+}
+
+
+
+
+
+
 
 
 /* ======= Responsive/Responsividade ======= */
