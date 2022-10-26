@@ -98,48 +98,142 @@ body {
 }
 
 
-/* ======= / ======= */
-#abreModalAddPalavra, #recarregar, #jogarAutomatico, #jogarNovamente {
+/* ======= Modal Adiciona Palavra ======= */
+#abreModalAddPalavra, #recarregar, #jogarAutomatico, #jogarNovamente{
     position: fixed;
     width: 70px;
     height: 70px;
-    border: none;
-    outline: none;
+    border:none;	
+    outline:none;
     border-radius: 70px;
     font-size: 3em;
     background-color: transparent;
-    color: #000;
+    color:#000;
     cursor: pointer;
 }
 
-#abreModalAddPalavra {
+
+#abreModalAddPalavra{
+    display: none;
     bottom: 160px;
     right: 5px;
 }
 
-#recarregar {
-    bottom: 80px;
-    right: 5px;
-}
-
-#jogarAutomatico {
-    bottom: 5px;
-    right: 5px;
-}
-
-#status {
-    position: fixed;
-    bottom: 10px;
-}
-
-#jogarNovamente {
+#jogarNovamente{
+    display: none;
     bottom: 15px;
     right: 30px;
     transform: rotate(-90deg);
     transform-origin: left top 0;
 }
 
+#status{
+    position: fixed;
+    bottom: 10px;
+ }
 
+#recarregar{ 
+    bottom: 80px;
+    right: 5px;
+}
+
+#jogarAutomatico{  
+    bottom: 5px;
+    right: 5px; 
+}
+
+/* The Modal (background) */
+.modal-container{
+    display: none; 
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black w/ opacity */
+}
+  
+/* Modal Content */
+.modal-add-palavra {
+    position: relative;
+    background-color: #fefefe;
+    border: 10px solid #000000;
+    border-radius: 5px;;
+    text-align: center;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animacao;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animacao;
+    animation-duration: 0.4s
+  }
+  
+  /* adiciona Animação */
+@-webkit-keyframes animacao {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animacao {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+.modal-header-add-palavra {
+    padding: 2px 16px;
+    background-color: #ffd700;
+    font-size: 1.3rem;
+    color: #000000;
+    border-bottom: 10px solid #000000;
+}
+  
+/*  botao X - fecha a modal */
+.close {
+    color: #000;
+    float: right;
+    font-size: 2rem;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #FFF;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-body-add-palavra {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 16px;
+}
+
+.modal-body-add-palavra input, .modal-body-add-palavra button{
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #9c9c9c;
+}
+
+.modal-body-add-palavra input{
+    text-transform: uppercase;
+}
+
+.modal-body-add-palavra button{
+    background-color: #ffd700;
+    cursor: pointer;
+}
+
+.modal-body-add-palavra button:hover{
+    background-color: #000;
+    color: #ffd700;
+}
 
 
 
